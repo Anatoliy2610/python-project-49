@@ -1,3 +1,4 @@
+#!/usr/bin/env pithon3
 def hello():
     print('Welcome to the Brain Games!')
 

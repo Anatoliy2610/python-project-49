@@ -1,4 +1,4 @@
-#!/usr/bin/env pithon3
+#!/usr/bin/env python3
 
 
 def hello():

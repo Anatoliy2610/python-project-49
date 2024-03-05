@@ -2,10 +2,16 @@
 
 
 from brain_games.yes_or_no import yes_or_no
-from brain_games.yes_or_no import welcome_user
+
+
+def hello():
+    print ('Welcome to the Brain Games!')
+    yes_or_no()
+
 
 def main():
-    yes_or_no()
+    hello ()
+
 
 if __name__ == '__main__':
     main()

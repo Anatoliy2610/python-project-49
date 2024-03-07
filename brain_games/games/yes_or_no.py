@@ -1,5 +1,4 @@
 from random import randint
-from brain_games.cli import welcome_user
 import prompt
 
 

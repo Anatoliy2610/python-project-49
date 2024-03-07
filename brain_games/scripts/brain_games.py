@@ -2,8 +2,8 @@
 
 
 def hello():
-    print('Welome to the Brain Games!')
-    from brain_games.cli import welcome_user
+    print('WeloME to the Brain Games!')
+    from brain_games.games.cli import welcome_user
     welcome_user('')
 
 

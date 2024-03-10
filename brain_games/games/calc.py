@@ -5,7 +5,13 @@ import prompt
 
 
 def calc():
-    print ('What is the result of the expresSION?')
+    name = prompt.string('May I have you name? ')
+    if  len(name) <= 0:
+        name = input()
+    else:
+        print ('Hello, ' + name + '!')
+
+    print ('What is the result of the expression?')
     i = 1
 
     while i <= 3:
@@ -29,9 +35,9 @@ def calc():
             i += 1
         else:
             print(f"'{answer_user}' is wrong answer ;(. Correct answer was '{result}'")
-            print ("Les's try again, " + 'Oleg' + "!")
+            print ("Les's try again, " + name + "!")
             i = 1
-    print ('Congratulations, ' + 'Oleg' + '!')
+    print ('Congratulations, ' + name + '!')
 
 
 

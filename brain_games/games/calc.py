@@ -8,7 +8,7 @@ def get_math_expression_and_result():
     numb1 = random.randint(1, 10)
     numb2 = random.randint(1, 10)
     sign = random.choice('+-*')
-    question = str(numb1) + str(sign) + str(numb2)
+    question = f'{numb1} {sign} {numb2}'
     if sign == '+':
         answer = operator.add(numb1, numb2)
     if sign == '-':

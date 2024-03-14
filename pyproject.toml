@@ -4,6 +4,11 @@ version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
+repository = "https://github.com/Anatoliy2610/python-project-49"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
 packages = [
   { include = "brain_games" },
 ]
@@ -26,4 +31,4 @@ brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
-brain-praim = "brain_games.scripts.brain_prime:main"
+brain-prime = "brain_games.scripts.brain_prime:main"

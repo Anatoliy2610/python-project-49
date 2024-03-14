@@ -1,18 +1,11 @@
 #!/usr/bin/env python3
 
 
-from brain_games.games.yes_or_no import yes_or_no
-
-
-def hello():
-    print ('Welcome to the Brain Games!')
-    yes_or_no()
+from brain_games.games.even import run_even_game
 
 
 def main():
-    hello()
+    run_even_game()
 
-
-if __name__ == '__main__':
+if __name__ =='__main__':
     main()
-

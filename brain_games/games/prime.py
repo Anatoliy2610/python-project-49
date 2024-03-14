@@ -1,43 +1,25 @@
-from random import randint, choice
-import prompt
+import random
+from brain_games.engin import get_run_games
+from brain_games.engin import game_prime
 
 
-
-def prime():
-    name = prompt.string('May I have you name? ')
-    if  len(name) <= 0:
-        name = input()
+def get_num_and_prime_ans():
+    max_num = 100
+    num = random.randint(1,max_num)
+    result = []
+    divider = 1
+    while divider <= max_num:
+        if num % divider == 0:
+            result.append(divider)
+            divider += 1
+        else:
+            divider += 1
+    if len(result) == 2:
+        answer = 'yes'
+        return str(num), answer
     else:
-        print ('Hello, ' + name + '!')
+        answer = 'no'
+        return str(num), answer
 
-    print ('Answer "yes" if given number is prime. Otherwise answer "no".')
-    i = 1
-
-    while i <= 3:
-        number = randint(1,100)
-        print ('Question: ' + str(number))
-        
-        result = []
-        n = 1
-        while n <= 100:
-            if number % n == 0:
-                result.append(n)
-                n += 1
-            else:
-                n += 1
-
-        if len(result) == 2:
-            answer = 'yes'
-        else:
-            answer = 'no'
-
-        answer_user = prompt.string('Your answer: ')
-
-        if answer == answer_user:
-            print ('Correct!')
-            i += 1
-        else:
-            print(f"'{answer_user}' is wrong answer ;(. Correct answer was '{answer}'")
-            print ("Les's try again, " + name + "!")
-            i = 1
-    print ('Congratulations, ' + name + '!')
+def run_prime_game():
+    get_run_games(get_num_and_prime_ans, game_prime)

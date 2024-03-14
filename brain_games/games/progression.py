@@ -1,57 +1,25 @@
-from random import randint, choice
-from operator import add, sub, mul
-import prompt
+import random
+from brain_games.engin import game_progression
+from brain_games.engin import get_run_games
 
 
-
-def progression():
-    name = prompt.string('May I have you name? ')
-    if  len(name) <= 0:
-        name = input()
-    else:
-        print ('Hello, ' + name + '!')
-
-    print ('What number is missing in the progression?')
-    
-    i = 1
-    while i <= 3:
-        numb1 = randint(0,10)
-        step = randint(2,6)
-        last_number = numb1 + step * 10
+def get_progression_nums():
+    num = random.randint(0,10)
+    step = random.randint(2,6)
+    len_progression = 10
+    result = []
+    next_num = 0
+    while next_num < len_progression:
+        result_sum = num + next_num * step
+        result.append(result_sum)
+        next_num+=1
         
-        result = []
-        m = 0
-        while m <= 9:
-            result_sum = numb1 + m * step
-            result.append(result_sum)
-            m+=1
-        
-        random_number = randint(0, len(result)-1)
-        result_copy = result.copy()
+    number_answer = random.randint(0, len(result)-1)
+    result_copy = result.copy()
+    result[number_answer] = '..'
+    string_result = ' '.join(str(i) for i in result)
+    answer = result_copy[number_answer]
+    return string_result, str(answer)
 
-        result[random_number] = '..'
-
-        n = 0
-        result_question = ''
-        while n < len(result):
-            result_question = result_question + ' ' + str(result[n])
-            n += 1
-
-
-        print ('Question: ' + result_question.strip())
-
-        answer_user = prompt.string('Your answer: ')
-
-        if str(result_copy[random_number]) == answer_user:
-            print ('Correct!')
-            i += 1
-        else:
-            print(f"'{answer_user}' is wrong answer ;(. Correct answer was '{result_copy[random_number]}'")
-            print ("Les's try again, " + name + "!")
-            i = 1
-    print ('Congratulations, ' + name + '!')
-
-
-
-
-
+def run_progression_game():
+    get_run_games(get_progression_nums, game_progression)

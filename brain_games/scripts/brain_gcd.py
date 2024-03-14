@@ -1,12 +1,10 @@
-from brain_games.games.gcd import game_gcd
+#!/usr/bin/env python3
 
-def hello():
-    print('Welome to the Brain Games!')
-    game_gcd()
+from brain_games.games.gcd import run_gcd_game
 
 
 def main():
-    hello()
+    run_gcd_game()
 
 
 if __name__ == '__main__':

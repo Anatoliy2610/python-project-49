@@ -10,7 +10,7 @@ game_prime = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def get_run_games(get_question_and_answer, game_options):
     name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
-    print (f'Hello, {name}!\n{game_options}')
+    print(f'Hello, {name}!\n{game_options}')
     user_attempt = 1
     attempts = 3
     while user_attempt <= attempts:

@@ -21,5 +21,5 @@ def get_run_games(get_question_and_answer, game_options):
             user_attempt += 1
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer is '{correct_answer}'.\nLet's try again, {name}!")
-            user_attempt = 1
+            break
     print(f'Congratulations, {name}!')

@@ -13,7 +13,5 @@ def get_math_expression_and_result():
         answer = operator.sub(numb1, numb2)
     if sign == '*':
         answer = operator.mul(numb1, numb2)
-    else:
-        break
     return question, str(answer)
 

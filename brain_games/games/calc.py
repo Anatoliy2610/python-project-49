@@ -14,4 +14,3 @@ def get_math_expression_and_result():
     if sign == '*':
         answer = operator.mul(numb1, numb2)
     return question, str(answer)
-

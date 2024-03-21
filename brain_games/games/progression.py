@@ -1,6 +1,4 @@
 import random
-from brain_games.CONSTANT import GAME_PROGRESSION
-from brain_games.engin import get_run_games
 
 
 def get_progression_nums():

@@ -1,6 +1,4 @@
 import random
-from brain_games.engin import get_run_games
-from brain_games.engin import game_prime
 
 
 def get_num_and_prime_ans():
@@ -20,7 +18,3 @@ def get_num_and_prime_ans():
     else:
         answer = 'no'
         return str(num), answer
-
-
-def run_prime_game():
-    get_run_games(get_num_and_prime_ans, game_prime)

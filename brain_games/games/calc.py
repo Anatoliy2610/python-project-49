@@ -1,7 +1,5 @@
 import random
 import operator
-from brain_games.engin import get_run_games
-from brain_games.engin import game_calc
 
 
 def get_math_expression_and_result():
@@ -17,6 +15,3 @@ def get_math_expression_and_result():
         answer = operator.mul(numb1, numb2)
     return question, str(answer)
 
-
-def run_calc_game():
-    get_run_games(get_math_expression_and_result, game_calc)

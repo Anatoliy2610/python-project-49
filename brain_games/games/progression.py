@@ -1,5 +1,5 @@
 import random
-from brain_games.engin import game_progression
+from brain_games.CONSTANT import GAME_PROGRESSION
 from brain_games.engin import get_run_games
 
 
@@ -20,7 +20,3 @@ def get_progression_nums():
     string_result = ' '.join(str(i) for i in result)
     answer = result_copy[number_answer]
     return string_result, str(answer)
-
-
-def run_progression_game():
-    get_run_games(get_progression_nums, game_progression)

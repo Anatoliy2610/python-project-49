@@ -1,12 +1,5 @@
 import prompt
 
-# game_options
-game_calc = 'What is the result of the expression?'
-game_even = 'Answer "yes" if the number is even, otherwise answer "no".'
-game_gcd = 'Find the greatest common divisor of given numbers.'
-game_progression = 'What number is missing in the progression?'
-game_prime = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
 
 def get_run_games(get_question_and_answer, game_options):
     name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')

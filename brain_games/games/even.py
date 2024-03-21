@@ -1,6 +1,4 @@
 import random
-from brain_games.engin import get_run_games
-from brain_games.engin import game_even
 
 
 def get_num_is_even():
@@ -12,4 +10,4 @@ def get_num_is_even():
 
 
 def run_even_game():
-    get_run_games(get_num_is_even, game_even)
+    get_run_games(get_num_is_even, GAME_EVEN)

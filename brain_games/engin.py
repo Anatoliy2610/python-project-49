@@ -1,12 +1,12 @@
 import prompt
 
 
-def get_run_games(get_question_and_answer, game_options):
+def get_run_brain_game(get_question_and_answer, GAME_OPTIONS):
     name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
-    print(f'Hello, {name}!\n{game_options}')
+    print(f'Hello, {name}!\n{GAME_OPTIONS}')
     user_attempt = 1
-    attempts = 3
-    while user_attempt <= attempts:
+    number_of_rounds = 3
+    while user_attempt <= number_of_rounds:
         question, correct_answer = get_question_and_answer()
         user_answer = prompt.string(f'Question: {question}\nYour answer: ')
         if user_answer == correct_answer:

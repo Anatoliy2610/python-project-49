@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from brain_games.games.progression import get_progression_nums, GAME_PROGRESSION
-from brain_games.engin import get_run_games
+from brain_games.engin import get_run_brain_game
 
 
 def run_progression_game():
-    get_run_games(get_progression_nums, GAME_PROGRESSION)
+    get_run_brain_game(get_progression_nums, GAME_PROGRESSION)
 
 
 def main():

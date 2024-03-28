@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from brain_games.games.even import get_num_is_even, GAME_EVEN
-from brain_games.engin import get_run_games
+from brain_games.engin import get_run_brain_game
 
 
 def run_even_game():
-    get_run_games(get_num_is_even, GAME_EVEN)
+    get_run_brain_game(get_num_is_even, GAME_EVEN)
 
 
 def main():
